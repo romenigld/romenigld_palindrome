@@ -11,10 +11,20 @@ class RomenigldPalindromeTest < Minitest::Test
   end
 
   def test_mixed_case_palindrome
-    assert "Racecar".palindrome?
+    assert "RaceCar".palindrome?
   end
 
   def test_palindrome_with_punctuation
-    skip
+    assert "Madam, I'm Adam.".palindrome?
+  end
+
+  def test_letters
+  # Asserting strict equality directly. This is confusing and less useful.
+  # So use the native assertions always.
+  # assert "Madam, I'm Adam.".letters == "MadamImAdam"
+
+  # Using a native assertion.
+  # assert_equal <expected>, <actual>
+    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
   end
 end
