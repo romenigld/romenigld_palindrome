@@ -20,7 +20,7 @@ Or install it directly using `gem`:
 
 ## Usage
 
-`romenigld_palindrome` adds a `palindrome?` method to the `String` class, and can be used as follows:
+`romenigld_palindrome` adds a `palindrome?` method to the `String` class and `Integer` class, and can be used as follows:
 
 ```
 $ irb
@@ -33,6 +33,10 @@ $ irb
 => true
 >> phrase = "Madam, I'm Adam."
 >> phrase.palindrome?
+=> true
+>> 12345.palindrome?
+=> false
+>> 12321.palindrome?
 => true
 ```
 
