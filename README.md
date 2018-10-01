@@ -38,6 +38,10 @@ $ irb
 => false
 >> 12321.palindrome?
 => true
+>> "".palindrome?
+=> false
+>> "         ".palindrome?
+=> false
 ```
 
 ## License
